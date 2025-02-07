@@ -1,12 +1,18 @@
-import React from 'react'
-import { Button } from './components/ui/button'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import QA from "./pages/QA";
+import LLMConversation from "./pages/LLMConversation";
 
-const App = () => {
+function App() {
   return (
-    <div>
-      <Button>Click Me</Button>
-    </div>
-  )
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/qa" element={<QA />} />
+        <Route path="/llm-conversation" element={<LLMConversation />} />
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;
