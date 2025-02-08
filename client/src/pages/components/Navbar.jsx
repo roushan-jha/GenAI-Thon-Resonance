@@ -20,7 +20,7 @@ const Navbar = () => {
           asChild
           onClick={() =>
             window.open(
-              "https://spend-wise-expensetracker.vercel.app/",
+              "./",
               "_blank"
             )
           }
