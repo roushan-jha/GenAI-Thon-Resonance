@@ -28,7 +28,7 @@ const GeminiAIComponent = () => {
       initial={{ opacity: 0 }} 
       animate={{ opacity: 1 }} 
       transition={{ duration: 0.5 }} 
-      className="w-[100vw] h-[100vh] flex flex-col justify-center items-center bg-gradient-to-br from-blue-500 to-indigo-700 text-white p-10 rounded-lg shadow-2xl"
+      className="w-[100vw] h-[100vh] overflow-y-auto flex flex-col justify-center items-center bg-gradient-to-br from-blue-500 to-indigo-700 text-white p-10 rounded-lg shadow-2xl"
     >
       <motion.h2 
         initial={{ opacity: 0, y: -20 }} 
